@@ -106,7 +106,9 @@ $neutral4: hsl(278, 68%, 11%);
 
   .cvc{
     width: 40%;
-    transform: translate(200%, -570%);
+    position: relative;
+
+
   }
 
   form label{
@@ -178,7 +180,6 @@ $neutral4: hsl(278, 68%, 11%);
     .card-number{font-size: 24px;}
     .cvc{
         transform: translate(195%, -500%);
-        position: relative;
     }
   }
 
@@ -191,7 +192,6 @@ $neutral4: hsl(278, 68%, 11%);
     .card-number{font-size: 18px;}
     .cvc{
         transform: translate(190%, -380%);
-        position: relative;
     }
   }
 
@@ -205,6 +205,5 @@ $neutral4: hsl(278, 68%, 11%);
     .cvc {
         top: 40%;
         transform: translate(185%, -330%);
-        position: relative;
     }
   }
