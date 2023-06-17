@@ -175,10 +175,11 @@ $neutral4: hsl(278, 68%, 11%);
 
   /* media queries */
 
-  @media all and (max-width: 992px){
+  @media all and (max-width: 994px){
     .card-number{font-size: 24px;}
     .cvc{
-        transform: translate(195%, -600%);
+        transform: translate(195%, -500%);
+        position: absolute;
     }
   }
 
@@ -191,18 +192,6 @@ $neutral4: hsl(278, 68%, 11%);
     .card-number{font-size: 18px;}
     .cvc{
         position: absolute;
-        right: 10%;
-        bottom: 20%;
-        transform: translate(25%, 80%);
-    }
-  }
-
-  @media all and (max-width: 576px){
-    .cvc{
-        position: absolute;
-        right: 10%;
-        bottom: 20%;
-        transform: translate(44%, 80%);
     }
   }
 
@@ -215,5 +204,8 @@ $neutral4: hsl(278, 68%, 11%);
     .card-name, .date {bottom: 0%;}
     .cvc {
         top: 40%;
+        right: 60px;
+        bottom: 117px;
+        position: absolute;
     }
   }
