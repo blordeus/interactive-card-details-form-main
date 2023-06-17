@@ -63,7 +63,7 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
-.font-card, .back-card {
+.front-card, .back-card {
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -128,7 +128,7 @@ form input {
 
 .submit-btn {
   background-color: hsl(278, 68%, 11%);
-  color: hsl(279, 6%, 55%);
+  color: hsl(0, 0%, 100%);
   border: none;
   outline: none;
   border-radius: 5px;
@@ -179,26 +179,31 @@ input:focus {
     font-size: 24px;
   }
   .cvc {
-    transform: translate(195%, -440%);
+    transform: translate(195%, -500%);
   }
 }
 @media all and (max-width: 768px) {
   .back-card {
-    transform: translate(25%, 25%);
+    transform: translate(25%, 55%);
     z-index: -1;
   }
   .card-number {
     font-size: 18px;
   }
   .cvc {
-    transform: translate(200%, -500%);
+    transform: translate(190%, -380%);
   }
 }
-@media all and (max-width: 415px) {
+@media all and (max-width: 400px) {
+  .back-card {
+    transform: translate(25%, 55%);
+    z-index: -1;
+  }
   .card-name, .date {
     bottom: 0%;
   }
   .cvc {
     top: 40%;
+    transform: translate(185%, -330%);
   }
 }/*# sourceMappingURL=index.css.map */

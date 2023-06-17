@@ -71,7 +71,7 @@ $neutral4: hsl(278, 68%, 11%);
     z-index: -1;
   }
 
-  .font-card, .back-card{
+  .front-card, .back-card{
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -134,7 +134,7 @@ $neutral4: hsl(278, 68%, 11%);
 
   .submit-btn{
     background-color: $neutral4;
-    color: $neutral3;
+    color: $neutral1;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -177,24 +177,31 @@ $neutral4: hsl(278, 68%, 11%);
   @media all and (max-width: 994px){
     .card-number{font-size: 24px;}
     .cvc{
-        transform: translate(195%, -440%);
+        transform: translate(195%, -500%);
     }
   }
 
+
   @media all and (max-width: 768px){
     .back-card{
-        transform: translate(25%, 25%);
+        transform: translate(25%, 55%);
         z-index: -1;
     }
     .card-number{font-size: 18px;}
     .cvc{
-        transform: translate(200%, -500%);
+        transform: translate(190%, -380%);
     }
   }
 
-  @media all and (max-width: 415px){
+
+  @media all and (max-width: 400px){
+        .back-card{
+        transform: translate(25%, 55%);
+        z-index: -1;
+    }
     .card-name, .date {bottom: 0%;}
     .cvc {
         top: 40%;
+        transform: translate(185%, -330%);
     }
   }
